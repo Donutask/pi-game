@@ -1,5 +1,5 @@
-# pi-game
-A game to memorise digits of pi
+# Pi Game
+A game to memorise digits of pi. Inspired by: https://www.piday.org/pi-quiz/
 
-### GAME LINK: https://donutask.github.io/pi-game/
+### LINK: https://donutask.github.io/pi-game/
 
