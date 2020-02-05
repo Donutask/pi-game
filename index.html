@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Pi Game</title>
+</head>
+
+<body>
+    <h3 id="mistakes">Mistakes Left: </h3>
+
+    <h2 id="inputDesc">Next Digit:</h2>
+
+    <input id="input" type="text" oninput="enterAnswer()">
+    </input>
+    <!-- <button onclick="reset()" id="reset">Reset</button> -->
+
+    <h2 id="piDigits">3.?</h2>
+    <h2 id="feedback" hidden>Feedback Goes Here</h2>
+    </br>
+    <h3 id="showAnswerDesc">Show Answer when incorrect?</h3>
+    <label class="switch">
+
+        <input type="checkbox" oninput="answerToggle()">
+        <span class="slider round"></span>
+    </label>
+
+</body>
+<script src="script.js"></script>
+
+</html>
