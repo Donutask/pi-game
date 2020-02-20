@@ -9,27 +9,52 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Pi Game</title>
+
 </head>
 
 <body>
     <h3 id="mistakes">Mistakes Left: </h3>
 
+    <h2 id="feedback" hidden>Feedback Goes Here</h2>
     <h2 id="inputDesc">Next Digit:</h2>
 
-    <input id="input" type="text" oninput="enterAnswer()">
+    <input id="input" type="number" oninput="enterAnswer()">
     </input>
     <!-- <button onclick="reset()" id="reset">Reset</button> -->
 
     <h2 id="piDigits">3.?</h2>
-    <h2 id="feedback" hidden>Feedback Goes Here</h2>
     </br>
+
+<div id="options">
+    <h1>Options</h1>
+    
     <h3 id="showAnswerDesc">Show Answer when incorrect?</h3>
     <label class="switch">
 
         <input type="checkbox" oninput="answerToggle()">
         <span class="slider round"></span>
     </label>
+    <h3 id="livesDesc">Max mistakes</h3>
+    <input id="lives" maxlength="2" type="number" value="5"></input>
 
+    <h3 id="startAtDesc">Start at which digit?</h3>
+    <input id="startAt" maxlength="2" type="number" value="0"></input>
+    <button id="restart" onclick="reset()">Restart</button>
+
+
+</div>
+
+<!-- The Modal -->
+<div id="modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <h2>GAME OVER</h2>
+      <p id="modalText">You scored: ???</p>
+      <button onclick="reset()">Play Again</button>
+    </div>
+  
+  </div>
 </body>
 <script src="script.js"></script>
 
