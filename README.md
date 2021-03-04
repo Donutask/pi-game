@@ -1,10 +1,11 @@
-# Pi Game
+# Replaced by https://donutask.github.io/pigame/
+
+## Pi Game
 A game to memorise digits of pi. Inspired by: https://www.piday.org/pi-quiz/
-## To be replaced by a newer game
 
- LINK: https://donutask.github.io/pi-game-old/
+Link: https://donutask.github.io/pi-game-old
 
-# FEATURES
+ FEATURES
 - 1000 digits of pi to remember
 - Change where you start in pi
 - Change the amount of mistakes you can make
